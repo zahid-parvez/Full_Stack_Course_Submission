@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+
+<body>
+    Enter number 1 : <input id="num1Id">
+    <br><br><br>
+    Enter number 2 : <input id="num2Id">
+    <br><br><br>
+    <button value="Sum" class="optr"> + </button>
+    <button value="Diff" class="optr"> - </button>
+    <button value="Mul" class="optr"> * </button>
+    <button value="Div" class="optr"> / </button>
+    <br><br><br>
+    Total Amount : <p id="pObj"></p>
+    <script src="https://code.jquery.com/jquery-3.7.1.js">
+
+    </script>
+    <script>
+
+        // $(document).ready(function () {
+
+        $(".optr").click(function () {
+
+            let val1 = $("#num1Id").val();
+            let val2 = $("#num2Id").val();
+
+            // let op = event.target.value;
+            let res;
+            // get the current operator
+            let op = $(this).val();
+
+
+            if (op === "Sum") {
+                res = parseInt(val1) + parseInt(val2);
+            }
+            else if (op === "Diff") {
+                res = parseInt(val1) - parseInt(val2);
+            }
+            else if (op === "Mul") {
+                res = parseInt(val1) * parseInt(val2);
+            }
+            else if (op === "Div") {
+                res = parseInt(val1) / parseInt(val2);
+            }
+
+            $("#pObj").text(res);
+
+        });
+
+        // });
+
+        // if( op === "Sum")
+        //     {
+        //         res = parseInt(val1) + parseInt(val2);
+        //     }
+        // else if( op === "Diff")
+        //     {
+        //         res = parseInt(val1) - parseInt(val2);
+        //     }
+        // else if( op === "Mul")
+        //     {
+        //         res = parseInt(val1) * parseInt(val2);
+        //     }
+        // else if( op === "Div")
+        //     {
+        //         res = parseInt(val1) / parseInt(val2);
+        //     }
+
+        
+
+    </script>
+</body>
+
+</html>
