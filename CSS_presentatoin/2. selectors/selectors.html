@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Type Selector */
+        h1 {
+            color: red;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* ID Selector */
+        #special-heading {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Type Selector -->
+    <h1>This is a heading styled by the type selector (h1)</h1>
+
+    <!-- ID Selector -->
+    <h1 id="special-heading">This is a special heading styled by the ID selector (#special-heading)</h1>
+
+    <!-- Class Selector -->
+    <p class="highlight">This paragraph is highlighted using the class selector (.highlight)</p>
+    <p>This paragraph is styled with the type selector (p)</p>
+
+    <!-- Combinators -->
+    <div>
+        <!-- Descendant Selector -->
+        <p>This paragraph is a descendant of a div, styled by the descendant selector (div p)</p>
+        
+        <!-- Child Selector -->
+        <p>This paragraph is a direct child of a div, styled by the child selector (div > p)</p>
+    </div>
+
+
+</body>
+</html>
