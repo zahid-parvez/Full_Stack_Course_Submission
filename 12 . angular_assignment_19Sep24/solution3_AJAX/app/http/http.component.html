@@ -1,0 +1,11 @@
+<hr>
+<p>http works!</p>
+<button (click)="getUserDetails()">Get Details</button>
+
+<div class="outterDiv">
+  <div *ngFor="let person of userData" class="innerDiv">
+    <img src="{{person.avatar}}" alt="" class="imageCls">
+    <p>{{person.first_name}} {{person.last_name}}</p>
+    <p>{{person.email}}</p>
+  </div>
+</div>
