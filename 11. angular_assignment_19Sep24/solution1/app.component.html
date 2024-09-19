@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Grid Example</title>
+    <style>
+        .outterDiv {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .innerDiv {
+            border: 1px solid #000;
+            /* padding: 20px; */
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+  <h1 style= "padding-left: 30%;">Displaying Collection Of Objects In Angular</h1>
+  <hr>
+  <br>
+    <div class="outterDiv">
+        <div *ngFor="let item of deptsArray" class="innerDiv">
+            <p>Dept Number: {{item.deptno}}</p>
+            <p style="color: green;">Dept Name: {{item.dname}}</p>
+            <p style="color: red">Dept Location: {{item.loc}}</p>
+        </div>
+    </div>
+</body>
+</html>

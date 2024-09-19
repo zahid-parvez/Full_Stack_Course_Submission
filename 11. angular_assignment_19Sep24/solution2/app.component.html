@@ -1,0 +1,12 @@
+<fieldset>
+    Product Name : <input type="text">
+    <br><br>
+    Product Price : <input type="number" [(ngModel)]="productPrice">
+    <br><br>
+    Product Quantity : <input type="number" [(ngModel)]="productQuantity">
+    <br><br>
+    <button (click) = "get()">Get Total</button>
+    <button (click) = "dec()"> - </button>
+    <button (click) = "inc()"> + </button>
+    <p>Total Amount : {{totalAmount}}</p>
+</fieldset>
