@@ -1,0 +1,76 @@
+.display-round-images {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+
+/* Clearfix (clear floats) */
+.row {
+  /* border: 1px solid #000; */
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.display-round-images1 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  align-items: center;
+  }
+
+/* Clearfix (clear floats) */
+.row1 {
+  /* border: 1px solid #000; */
+  /* padding: 20px; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.row1 img{
+  width: 200px;
+  height:300px;
+  border-radius: 20px;
+}
+
+.row1 img:hover{
+  width: 250px;
+  height:350px;
+  border-radius: 50px;
+}
+
+.display-round-images2 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  align-items: center;
+  }
+
+/* Clearfix (clear floats) */
+.row2 {
+  /* border: 1px solid #000; */
+  /* padding: 20px; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.row2 img{
+  width: 300px;
+  height:500px;
+  border-radius: 20px;
+}
+
+.row2 img:hover{
+  width: 350px;
+  height:550px;
+  border-radius: 50px;
+}
